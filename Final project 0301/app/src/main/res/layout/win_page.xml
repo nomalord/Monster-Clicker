@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+
+    <TextView
+        android:id="@+id/win"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="You Won!                                          click to go back"
+        android:textSize="23dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:layout_centerInParent="true"
+        android:fontFamily="@font/minecraft"/>
+</RelativeLayout>

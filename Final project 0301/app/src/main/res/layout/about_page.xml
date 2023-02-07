@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/Name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Name: Noam Koushnir"
+        android:textColor="@color/white"
+        android:textSize="32dp"
+        android:fontFamily="@font/minecraft"/>
+
+    <TextView
+        android:id="@+id/ID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Name"
+        android:gravity="center_horizontal"
+        android:text="ID: 325972040"
+        android:textColor="@color/white"
+        android:textSize="32dp"
+        android:fontFamily="@font/minecraft"/>
+
+    <TextView
+        android:id="@+id/School"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/birth"
+        android:gravity="center_horizontal"
+        android:text="School: Haamit Makif Gimel"
+        android:textColor="@color/white"
+        android:textSize="32dp"
+        android:fontFamily="@font/minecraft"/>
+
+    <TextView
+        android:id="@+id/year"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textColor="@color/white"
+        android:layout_below="@id/School"
+        android:textSize="32dp"
+        android:text="Year: 2021"
+        android:fontFamily="@font/minecraft"/>
+
+    <TextView
+        android:id="@+id/teacher"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/year"
+        android:gravity="center_horizontal"
+        android:text="Teacher: Eli Sinianski"
+        android:textColor="@color/white"
+        android:textSize="32dp"
+        android:fontFamily="@font/minecraft"/>
+
+    <TextView
+        android:id="@+id/birth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ID"
+        android:gravity="center_horizontal"
+        android:text="Date of Birth: 28/02/2004"
+        android:textColor="@color/white"
+        android:textSize="32dp"
+        android:fontFamily="@font/minecraft"/>
+
+</RelativeLayout>

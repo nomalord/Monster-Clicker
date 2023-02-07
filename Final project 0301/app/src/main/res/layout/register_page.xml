@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundkush">
+
+
+    <Button
+        android:id="@+id/logBtn"
+        android:layout_width="177dp"
+        android:layout_height="74dp"
+        android:layout_below="@id/logPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="25dp"
+        android:background="@color/teal_200"
+        android:gravity="center"
+        android:text="Register"
+        android:textSize="15dp"
+        android:fontFamily="@font/minecraft"/>
+
+    <EditText
+        android:id="@+id/regName"
+        android:layout_width="409dp"
+        android:layout_height="51dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp"
+        android:layout_marginBottom="25dp"
+        android:background="#30FFFFFF"
+        android:fontFamily="@font/minecraft"
+        android:gravity="center"
+        android:hint="Nickname"
+        android:textSize="15dp"
+        android:textColorHint="@color/black"/>
+
+    <EditText
+        android:id="@+id/logEmail"
+        android:layout_width="409dp"
+        android:layout_height="51dp"
+        android:layout_below="@id/regName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="25dp"
+        android:background="#30FFFFFF"
+        android:fontFamily="@font/minecraft"
+        android:gravity="center"
+        android:inputType="textEmailAddress"
+        android:hint="Email"
+        android:textColorHint="@color/black"
+        android:textSize="15dp" />
+
+    <EditText
+        android:id="@+id/logPassword"
+        android:layout_width="409dp"
+        android:layout_height="51dp"
+        android:layout_below="@id/logEmail"
+        android:background="#30FFFFFF"
+        android:fontFamily="@font/minecraft"
+        android:gravity="center"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColorHint="@color/black"
+        android:textSize="15dp" />
+</RelativeLayout>

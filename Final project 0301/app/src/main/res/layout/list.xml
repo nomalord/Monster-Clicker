@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    android:background="@drawable/scroll">
+
+    <TextView
+        android:id="@+id/gamerType"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:fontFamily="@font/minecraft"
+        android:gravity="center"
+        android:text="gamer"
+        android:textColor="@color/black"
+        android:textSize="50dp" />
+
+
+    <LinearLayout
+        android:id="@+id/pictureLayout"
+        android:layout_width="109dp"
+        android:layout_height="250dp"
+        android:orientation="vertical"
+        android:visibility="visible"
+        android:layout_below="@id/gamerType">
+
+        <ImageView
+            android:id="@+id/list_image"
+            android:layout_width="109dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/emptypicture"
+            android:tintMode="screen"
+            android:scaleType="fitCenter"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="299dp"
+        android:layout_height="250dp"
+        android:orientation="vertical"
+        android:layout_toEndOf="@id/pictureLayout"
+        android:layout_below="@id/gamerType">
+
+        <LinearLayout
+            android:layout_width="301dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/list_name"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="3dp"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:text="Name:" />
+
+            <TextView
+                android:id="@+id/list_email"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="3dp"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:text="Email: " />
+
+            <TextView
+                android:id="@+id/list_password"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="3dp"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:text="Password:" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="301dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_marginBottom="25dp">
+
+            <TextView
+                android:id="@+id/list_gold"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="3dp"
+                android:layout_weight="1"
+                android:textColor="#E6FF00"
+                android:textSize="20dp"
+                android:text="Gold:" />
+
+            <TextView
+                android:id="@+id/list_level"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="3dp"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:text="Level: " />
+
+            <TextView
+                android:id="@+id/list_weapon"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="3dp"
+                android:layout_weight="2"
+                android:textColor="@color/white"
+                android:text="@string/weapon" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/list_monster"
+            android:layout_width="match_parent"
+            android:layout_height="63dp"
+            android:layout_marginLeft="3dp"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:text="Monster:" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/parentRelative"
+    android:background="@drawable/backgroundkush">
+
+    <TextView
+        android:id="@+id/monsterName"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_below="@id/timer"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="25dp"
+        android:fontFamily="@font/minecraft"
+        android:gravity="center"
+        android:text="Name LVL Type"
+        android:textColor="@color/black"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/monsterHP"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_below="@id/HPbar"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/minecraft"
+        android:gravity="center"
+        android:text="HP"
+        android:layout_marginTop="25dp"
+        android:textColor="@color/black"
+        android:textSize="30dp" />
+
+
+    <ImageButton
+        android:id="@+id/monsterIMG"
+        android:layout_width="256dp"
+        android:layout_height="270dp"
+        android:layout_below="@id/monsterHP"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="33dp"
+        android:adjustViewBounds="true"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter" />
+
+
+    <ImageButton
+        android:id="@+id/inventory"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:adjustViewBounds="true"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        android:src="@drawable/bagpackkush"
+        android:text="Button" />
+
+    <ImageButton
+        android:id="@+id/weapon"
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:adjustViewBounds="true"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        android:padding="100dp"/>
+
+    <ImageButton
+        android:id="@+id/shop"
+        android:layout_width="wrap_content"
+        android:layout_height="99dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:adjustViewBounds="true"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        android:src="@drawable/shopkush"
+        android:text="Button" />
+
+    <TextView
+        android:id="@+id/timer"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/minecraft"
+        android:gravity="center"
+        android:text="Loading"
+        android:textColor="@color/black"
+        android:textSize="30dp"/>
+
+    <ProgressBar
+        android:id="@+id/HPbar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/monsterName"
+        />
+
+    <ProgressBar
+        android:id="@+id/load"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:indeterminate="true"
+        android:outlineAmbientShadowColor="@color/black"
+        android:outlineSpotShadowColor="@color/black"
+        android:visibility="invisible" />
+
+
+</RelativeLayout>

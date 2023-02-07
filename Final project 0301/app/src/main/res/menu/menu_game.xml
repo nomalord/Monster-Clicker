@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/stopMusic"
+        android:title="Stop Music"
+        >
+    </item>
+
+    <item
+        android:id="@+id/track1"
+        android:title="track 1"
+        android:visible="false"
+        >
+    </item>
+
+    <item
+        android:id="@+id/track2"
+        android:title="track 2"
+        android:visible="false"
+        >
+    </item>
+
+    <item
+        android:id="@+id/track3"
+        android:title="track 3"
+        android:visible="false"
+        >
+    </item>
+    <item
+        android:id="@+id/track4"
+        android:title="track 4"
+        android:visible="false"
+        >
+    </item>
+    <item
+        android:id="@+id/track5"
+        android:title="track 5"
+        android:visible="false"
+        >
+    </item>
+    <item
+        android:id="@+id/track6"
+        android:title="track 6"
+        android:visible="false"
+        >
+    </item>
+
+
+    <item
+        android:id="@+id/difficulty"
+        android:title="Change Difficulty"
+        >
+    </item>
+
+    <item
+        android:id="@+id/restart"
+        android:title="Restart Game"
+        >
+    </item>
+
+    <item
+        android:id="@+id/logOut"
+        android:title="Log Out">
+
+    </item>
+    <item
+        android:id="@+id/exit"
+        android:title="Exit">
+
+    </item>
+</menu>

@@ -1,0 +1,26 @@
+FirebaseAuth mAuth;
+    FirebaseDatabase database;
+    DatabaseReference myRef;
+    FirebaseUser account;
+    User user = new User("", "", "");
+
+mAuth = FirebaseAuth.getInstance();
+        database = FirebaseDatabase.getInstance();
+        myRef = database.getReference("Users");
+        account = mAuth.getCurrentUser();
+        myRef.child(account.getUid()).addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                // This method is called once with the initial value and again
+                // whenever data at this location is updated.
+                user = new User(dataSnapshot.child("email").getValue(String.class),
+                        dataSnapshot.child("password").getValue(String.class),
+                        dataSnapshot.child("name").getValue(String.class));
+            }
+
+            @Override
+            public void onCancelled(DatabaseError error) {
+                // Failed to read value
+                Toast.makeText(MainActivity.this, "ff", Toast.LENGTH_LONG).show();
+            }
+        });

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:background="@color/common_google_signin_btn_text_light_default">
+
+
+    <ImageButton
+        android:id="@+id/exit"
+        android:layout_width="145dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:adjustViewBounds="true"
+        android:background="@android:color/transparent"
+        android:fontFamily="@font/minecraft"
+        android:scaleType="fitCenter"
+        android:src="@drawable/cancel"
+        android:text="exit"
+        android:backgroundTint="@color/black"/>
+    <TextView
+        android:id="@+id/shopTitle"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#45BD1717"
+        android:gravity="center"
+        android:text="Welcome To The Shop"
+        android:textColor="#D664EA"
+        android:textSize="20dp" />
+
+    <LinearLayout
+        android:id="@id/linear"
+        android:layout_below="@id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="#66000000">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/tripleDamage"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/minecraft"
+                android:src="@drawable/fire" />
+            <ImageButton
+                android:id="@+id/doubleDmg"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_weight="1"
+                android:src="@drawable/fire" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_below="@id/shopTitle"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@android:color/transparent"
+        app:srcCompat="@drawable/damage" />
+
+
+
+
+</RelativeLayout>
